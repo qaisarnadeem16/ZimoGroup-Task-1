@@ -1,5 +1,15 @@
-import '@/styles/globals.css'
+import '../styles/globals.css';
+import { Provider } from 'react-redux';
+import { store } from '../Store/Store';
 
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+function MyApp({ Component, pageProps }) {
+  return (
+    <Provider store={store}>
+      <Component {...pageProps} />
+    </Provider>
+  );
 }
+
+export default MyApp;
