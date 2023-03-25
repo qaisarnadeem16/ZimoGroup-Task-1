@@ -1,4 +1,4 @@
-import { Product } from "../Interface";
+import { Product } from "./Interface";
 
 
 export const ProductData: Product[]=[

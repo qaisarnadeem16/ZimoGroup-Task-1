@@ -4,7 +4,7 @@ import AddToCartBtn from './AddToCartBtn'
 import React from 'react'
 import { IoChevronForwardOutline, IoReturnUpBackSharp } from 'react-icons/io5'
 import { IoChevronBack } from 'react-icons/io5'
-import { ProductData } from '../ProductData'
+import { ProductData } from '../../ProductData'
 import Link from 'next/link'
 import { motion } from "framer-motion"
 
