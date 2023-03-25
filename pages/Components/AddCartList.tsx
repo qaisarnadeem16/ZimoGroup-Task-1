@@ -15,7 +15,7 @@ const AddCartList = () => {
         <div>
             {cartItems.length>0 ?
             cartItems.map((item) => (
-                <div className="flex gap-5 bg-[#2b2a2a] p-3 rounded-lg mb-3 relative" key={item.id} >
+                <div className="flex gap-5 bg-[#2b2a2a] p-3 rounded-lg mb-3 relative"  >
                     <Image src={item.product.imagePath} alt='s' width={70} height={100} className='rounded-[1rem]' />
                     <div className="">
                         <span className='text-white'>{item.product.name}</span>
