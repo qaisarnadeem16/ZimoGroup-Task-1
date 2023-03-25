@@ -1,4 +1,4 @@
-"use client"
+"use cli";
 import React from 'react'
 import {BsFillCartPlusFill} from 'react-icons/bs'
 import { Product } from '../../Interface'
@@ -21,9 +21,9 @@ const AddToCartBtn = (props: Props) => {
        <BsFillCartPlusFill/> Add to Cart
       </button>
     )
-  return <button className="flex gap-2 items-center justify-center w-full disabled cursor-not-allowed bg-[#ea3b67] text-gray-400 py-2 px-4 rounded" onClick={() => dispatch(increment(props.product))}>
+  return (<button className="flex gap-2 items-center justify-center w-full disabled cursor-not-allowed bg-[#ea3b67] text-gray-400 py-2 px-4 rounded" onClick={() => dispatch(increment(props.product))}>
     <BsFillCartPlusFill/>Add to Cart
-  </button>
+  </button>)
 }
 
-export default AddToCartBtn
+export default AddToCartBtn;
